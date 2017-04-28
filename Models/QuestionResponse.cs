@@ -7,9 +7,9 @@ namespace test123.Models
 {
     public class QuestionResponse
     {
-        int QuestionId { get; set; }
-        string ResponseText { get; set; }
-        ResponseTypeEnum ResponseType { get; set; }
+        public int QuestionId { get; set; }
+        public string ResponseText { get; set; }
+        public ResponseTypeEnum ResponseType { get; set; }
 
     }
 }

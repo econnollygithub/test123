@@ -7,11 +7,11 @@ namespace test123.Models
 {
     public class Test
     {
-        int TestId { get; set; }
-        string TestName { get; set; }
-        int TestDifficulty { get; set; }
-        TestType TestType { get; set; }
-        IEnumerable<TestPage> TestPages { get; set; }
+        public int TestId { get; set; }
+        public string TestName { get; set; }
+        public int TestDifficulty { get; set; }
+        public TestType TestType { get; set; }
+        public IEnumerable<TestPage> TestPages { get; set; }
 
     }
 }

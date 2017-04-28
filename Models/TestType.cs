@@ -7,7 +7,7 @@ namespace test123.Models
 {
     public class TestType
     {
-        int TestTypeId { get; set; }
-        string TestTypeName { get; set; }
+        public int TestTypeId { get; set; }
+        public string TestTypeName { get; set; }
 }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace angular_aspnet_core
+namespace test123
 {
     public class Program
     {

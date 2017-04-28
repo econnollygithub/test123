@@ -7,13 +7,13 @@ namespace test123.Models
 {
     public class TestResult
     {
-        string TestName {get; set;}
-        int TestId {get; set;}
-        int LastCompletedQuestion { get; set;}
-        int UserId { get; set;}
-        int NumberRight { get; set;}
-        int NumberWrong { get; set;}
-        int PercentRight { get; set;}
-        int AllowedTime { get; set;}
+        public string TestName {get; set;}
+        public int TestId {get; set;}
+        public int LastCompletedQuestion { get; set;}
+        public int UserId { get; set;}
+        public int NumberRight { get; set;}
+        public int NumberWrong { get; set;}
+        public int PercentRight { get; set;}
+        public int AllowedTime { get; set;}
     }
 }

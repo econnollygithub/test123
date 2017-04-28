@@ -7,10 +7,10 @@ namespace test123.Models
 {
     public class TestUser
     {
-        int UserId { get; set; }
-        string FirstName { get; set; }
-        string LastName { get; set; }
-        IEnumerable<TestResult> CurrentResults { get; set; }
+        public int UserId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public IEnumerable<TestResult> CurrentResults { get; set; }
 
     }
 }
