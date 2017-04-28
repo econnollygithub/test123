@@ -13,10 +13,14 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->
+    <None Remove="ClientApp\app\components\testoverview\testoverview.component.scss" />
     <None Remove="yarn.lock" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientApp\app\components\testoverview\testoverview.component.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\dist\assets\" />

@@ -244,3 +244,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# css and javascript
+*.css
+/ClientApp/app/components/shared/header/header.component.css
+/ClientApp/app/components/shared/header/header.component.css
+/ClientApp/app/components/shared/header/header.component.min.css

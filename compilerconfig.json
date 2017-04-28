@@ -2,5 +2,9 @@
   {
     "outputFile": "ClientApp/app/components/shared/header/header.component.css",
     "inputFile": "ClientApp/app/components/shared/header/header.component.scss"
+  },
+  {
+    "inputFile": "ClientApp/app/components/testoverview/testoverview.component.scss",
+    "outputFile": "ClientApp/app/components/testoverview/testoverview.component.css"
   }
 ]
