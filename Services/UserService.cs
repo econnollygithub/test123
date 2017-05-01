@@ -6,7 +6,7 @@ using test123.Models;
 
 namespace test123.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         public IEnumerable<TestUser> GetUsers()
         {

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using test123.Services;
 
 namespace test123
 {
@@ -30,6 +31,9 @@ namespace test123
         {
             // Add framework services.
             services.AddMvc();
+
+            //services DI, courtesy ASPNet Core
+            services.AddScoped<IUserService, UserService>();
 
         }
 
