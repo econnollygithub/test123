@@ -6,7 +6,7 @@ import { AppComponent } from './components/app/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { TestOverviewComponent } from './components/testoverview/testoverview.component';
 import { HeaderComponent } from './components/shared/header/header.component';
-import { ServerService } from '../app/core';
+import { ApiService } from '../app/core';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { ServerService } from '../app/core';
         ])
     ],
     providers: [
-        ServerService
+        ApiService
     ]
 })
 export class AppModule {

@@ -8,9 +8,9 @@ import { TestUser } from '../models/testUser.model';
 import { CONFIG } from './config';
 
 @Injectable()
-export class ServerService {
+export class ApiService {
 
-    private _productUrl = 'api/products/products.json';
+    //private _productUrl = 'api/products/products.json';
 
     constructor(private _http: Http) {
 
@@ -19,7 +19,8 @@ export class ServerService {
     getUsers(): Observable<TestUser[]> {
         return this._http.get(CONFIG.url.users)
             .map((response: Response) => <TestUser[]>response.json())
-            .do(data => console.log('All: ' + JSON.stringify(data)))
+            .do(data => console.log(data))
+            //.do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
     }
 
