@@ -37,27 +37,7 @@ namespace test123.Services
 
         public TestUser GetUser(int userId)
         {
-            var users = new List<TestUser>
-            {
-                new TestUser()
-                {
-                    UserId = 1,
-                    FirstName = "David",
-                    LastName = "Joyce",
-                },
-                new TestUser()
-                {
-                    UserId = 2,
-                    FirstName = "Fred",
-                    LastName = "Forti",
-                },
-                new TestUser()
-                {
-                    UserId = 3,
-                    FirstName = "Brigid",
-                    LastName = "Daly",
-                }
-            };
+            var users = GetUsers();
             var user = users.FirstOrDefault(a => a.UserId == userId);
 
             return user;
