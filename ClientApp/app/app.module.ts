@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { TestOverviewComponent } from './components/testoverview/testoverview.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+import { ServerService } from '../app/core';
 
 
 @NgModule({
@@ -24,6 +25,9 @@ import { HeaderComponent } from './components/shared/header/header.component';
             { path: 'testoverview/:id', component: TestOverviewComponent},
             { path: '**', redirectTo: 'home' }
         ])
+    ],
+    providers: [
+        ServerService
     ]
 })
 export class AppModule {
