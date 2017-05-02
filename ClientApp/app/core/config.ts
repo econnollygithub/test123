@@ -8,6 +8,7 @@ export let CONFIG = {
     url: {
         users: 'users',
         user: 'users/userId/${}',
+        tests: 'tests'
     }
 
 }

@@ -9,5 +9,6 @@ namespace test123.Models
     {
         public int TestTypeId { get; set; }
         public string TestTypeName { get; set; }
-}
+
+    }
 }

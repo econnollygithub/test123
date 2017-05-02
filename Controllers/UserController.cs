@@ -18,12 +18,9 @@ namespace test123.Controllers
             _userService = userService;
         }
 
-
-
         [HttpGet]
         public IEnumerable<TestUser> GetUsers()
         {
-            //var userService = new UserService();
             var users = _userService.GetUsers();
             return users;
         }
@@ -32,8 +29,6 @@ namespace test123.Controllers
         [Route("{userId}", Name="GetUser")]
         public TestUser GetUser(int userId)
         {
-            //var userService = new UserService();
-
             var user = _userService.GetUser(userId);
             return user;
         }

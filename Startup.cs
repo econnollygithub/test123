@@ -34,6 +34,7 @@ namespace test123
 
             //services DI, courtesy ASPNet Core
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ITestService, TestService>();
 
         }
 
