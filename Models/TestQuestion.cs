@@ -9,6 +9,9 @@ namespace test123.Models
     {
         public int QuestionId { get; set; }
         public string QuestionText { get; set; }
+
+        public int TestId { get; set; }
+
         public IEnumerable<QuestionResponse> QuestionResponses { get; set; }
     }
 }

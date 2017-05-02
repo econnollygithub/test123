@@ -1,10 +1,12 @@
 <h1>Hello, student!</h1>
 
-<div class="well well-sm mouseOver" (click)="navigateToTest()">
+<div class="well well-sm mouseOver" >
     <div >
-        <div class="text-content "  *ngFor="let test of tests">
-            <h2 class="row" style="margin-left: 1px">{{test.testName}} Test</h2>
-            <h5>Finished Question 23</h5>
+        <div class="text-content "  *ngFor="let test of tests" >
+            <div (click)="navigateToTest(test.testId)">
+                <h2 class="row" style="margin-left: 1px">{{test.testName}} Test</h2>
+                <h5>Finished Question 23</h5>
+            </div>
         </div>
         <!--<div class="col-md-6 col-xs-6 text-right">
             <h3>Current Score</h3>

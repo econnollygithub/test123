@@ -21,8 +21,9 @@ export class HomeComponent implements OnInit {
     tests: any[] = [];
     errorMessage: any;
 
-    navigateToTest() {
-        this._router.navigate(["testoverview", "1234"])
+    navigateToTest(id: any) {
+        alert("requested navation to " + id);
+        this._router.navigate(["testoverview", id])
     }
 
     ngOnInit(): void {
@@ -32,7 +33,6 @@ export class HomeComponent implements OnInit {
 
     private refresh() {
         this.tests = [];
-        //this.currentTEst = new TestUser();
         this._apiService.getTests()
             .subscribe(tests => {                           //function arg 1, success
                 this.tests = tests;

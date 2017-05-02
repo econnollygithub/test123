@@ -24,6 +24,14 @@ namespace test123.Controllers
             var tests = _testService.GetTests();
             return tests;
         }
+
+        [HttpGet]
+        [Route("questions/{testId}/{testPageNumber}")]
+        public IEnumerable<TestQuestion> GetQuestionsForTestPage(int testId, int testPageNumber)
+        {
+            var questions = _testService.GetQuestionsForTestPage(testId, testPageNumber);
+            return questions;
+        }
         
     }
 }
