@@ -3,7 +3,7 @@
 <div class="well well-sm mouseOver" >
     <div >
         <div class="text-content "  *ngFor="let test of tests" >
-            <div (click)="navigateToTest(test.testId)">
+            <div (click)="navigateToTest(test.testId, test.testName)">
                 <h2 class="row" style="margin-left: 1px">{{test.testName}} Test</h2>
                 <h5>Finished Question 23</h5>
             </div>

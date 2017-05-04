@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
     tests: any[] = [];
     errorMessage: any;
 
-    navigateToTest(id: any) {
-        alert("requested navation to " + id);
-        this._router.navigate(["testoverview", id])
+    navigateToTest(id: any, name: any) {
+        //alert("requested navation to " + id);
+        this._router.navigate(["testoverview", id, name])
     }
 
     ngOnInit(): void {

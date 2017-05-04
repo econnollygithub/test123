@@ -17,6 +17,7 @@ export class TestOverviewComponent {
 
     testId: number = 0;
     currentTest: Test = null;
+    testName: string = null;
 
     navigateHome() {
         this._router.navigate(["home"])
@@ -24,7 +25,12 @@ export class TestOverviewComponent {
 
     ngOnInit(): void {
         console.log('In OnInit');
+        console.log(this._activatedRoute);
         this.testId = this._activatedRoute.snapshot.params['id'];
+        this.testName = this._activatedRoute.snapshot.params['name'];
+
+        console.log("id is " + this.testId);
+        console.log("name is " + this.testName);
 
         //get the contents for the test
 

@@ -22,7 +22,7 @@ import { ApiService } from '../app/core';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'testoverview/:id', component: TestOverviewComponent},
+            { path: 'testoverview/:id/:name', component: TestOverviewComponent},
             { path: '**', redirectTo: 'home' }
         ])
     ],
